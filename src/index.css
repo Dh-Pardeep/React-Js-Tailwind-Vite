@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* common components */
+.common_btn {
+    transition: all 0.3s linear;
+    border: 1px solid #F36A3E !important;
+}
+
+.common_btn:focus,
+.common_btn:hover {
+    -webkit-animation: pulse 1s;
+    animation: pulse 1s;
+    box-shadow: 0 0 0 0.7em transparent;
+    color: #F36A3E;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #F36A3E;
+    }
+}
